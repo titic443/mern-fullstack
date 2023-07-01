@@ -1,4 +1,4 @@
-import * as api from '../api/index'
+import * as api from '../api'
 
 //Action GetPost
 export const getPosts = () => async (dispatch) => {

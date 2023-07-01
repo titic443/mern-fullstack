@@ -7,8 +7,8 @@ export const getPosts = async (req,res)=> {
 
         console.log(postMessages);
         //status 200: OK
-        res.status(200).json(postMessages)
-
+        // res.status(200).json(postMessages)
+        res.status(200).json(["Hello","World"])
     }catch(error) {
         //status 404: Not Found
         res.status(404).json({message: error.message})

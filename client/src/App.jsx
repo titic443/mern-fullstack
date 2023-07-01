@@ -14,14 +14,14 @@ const App = () => {
     dispatch(getPosts)
   }, [dispatch])
   return (
-    <Container maxWidth='lg'>
+    <Container className={classess.container} maxWidth='lg'>
       <AppBar  className={classess.appBar} position='static' color='inherit'>
-        <Typography className={classess.heading} variant='h2' align='center'>Memory</Typography>
-        <img className={classess.image} src={memories} alt="memories" height='60px'/>
+        <Typography className={classess.heading} variant='h2' >Memory</Typography>
+        <img className={classess.image} src={memories} alt="memories" height='60px' />
       </AppBar>
-      <Grow in>
+      <div>
         <Container>
-          <Grid container justifyContent='space-between' alignItems='stretch' spacing="3px">
+          <Grid container justifyContent='space-between' alignItems="stretch" spacing={3}>
             <Grid item xs={12} sm={7}>
               <Posts />
             </Grid>
@@ -30,7 +30,7 @@ const App = () => {
             </Grid>
           </Grid>
         </Container>
-      </Grow>
+      </div>
     </Container>
   )
 }
