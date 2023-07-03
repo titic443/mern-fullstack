@@ -4,6 +4,6 @@ import { getPosts,createPosts } from '../controller/post.js'
 const router = express.Router()
 
 router.get('/', getPosts)
-router.get('/xxx', createPosts)
+router.post('/', createPosts)
 
 export default router

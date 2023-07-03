@@ -21,6 +21,7 @@ export const createPosts = async (req,res)=> {
     try{
         await newPost.save()
         //stauts 201: Created
+        console.log(newPost)
         res.status(201).json(newPost)
     }catch(error){
         //status 409: Conflict

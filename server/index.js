@@ -15,8 +15,8 @@ app.use('/posts', postRoutes)
 
 
 /* Create Mongo DB on Cloud http://mongodb.com/cloud/atlas */
-const CONNECTION_URL="mongodb://127.0.0.1:27017"
-// const CONNECTION_URL = "mongodb+srv://mernfullstack:mernfullstack@cluster0.hraslco.mongodb.net/?retryWrites=true&w=majority"
+// const CONNECTION_URL="mongodb://127.0.0.1:27017"
+const CONNECTION_URL = "mongodb+srv://mernfullstack:mernfullstack@cluster0.hraslco.mongodb.net/?retryWrites=true&w=majority"
 const PORT = process.env.PORT || 5000;
 
 // mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true})

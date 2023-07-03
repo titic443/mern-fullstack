@@ -23,6 +23,10 @@ export default makeStyles((theme) => ({
     margin: '10px 0',
   },
   buttonSubmit: {
-    marginBottom: 10,
+    marginBottom: 15,
+    padding: '8px 22px'
   },
+  buttonClear: {
+    padding: '8px 22px'
+  }
 }));
